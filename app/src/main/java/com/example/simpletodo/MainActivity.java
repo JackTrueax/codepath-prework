@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
             items = new ArrayList<>(FileUtils.readLines(getDataFile(), Charset.defaultCharset()));
         } catch (IOException e) {
             Log.e("MainActivity", "Error reading items", e);
+            items = new ArrayList<>();
         }
     }
 
